@@ -1,5 +1,5 @@
 #####################################################################################################################
-# Figure 10: BRN estimation - Estimation of the BRN for varying detection rate and traceable probability parameters #
+# Figure 9: BRN estimation - Estimation of the BRN for varying detection rate and traceable probability parameters #
 #####################################################################################################################
 
 # Parameters
