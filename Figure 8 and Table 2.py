@@ -1,5 +1,5 @@
 #####################################################################################################################
-# Figure 8: Simulations of the number of active nodes through time for different levels of global infection rate, β #
+# Figure 8 and Table 2: Simulations of the number of active nodes through time for different levels of global infection rate, β #
 #####################################################################################################################
 
 np.random.seed(10)
