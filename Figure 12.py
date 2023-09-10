@@ -1,5 +1,5 @@
 #############
-# Figure 13 #
+# Figure 12 #
 #############
 
 # Parameters - London
