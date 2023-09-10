@@ -1,5 +1,5 @@
 ######################################################
-# Figure 11: Distribution of simulated cluster sizes #
+# Figure 10: Distribution of simulated cluster sizes #
 ######################################################
 
 np.random.seed(10)
