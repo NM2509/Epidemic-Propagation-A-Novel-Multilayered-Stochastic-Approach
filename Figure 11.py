@@ -1,20 +1,24 @@
 ############################
-# Figure 12: semi-log plot #
+# Figure 11: semi-log plot #
 ############################
 
 np.random.seed(10)
 random.seed(10) 
 
 # Default parameters
+sizes = [1,2,3,4,5] 
+probs = [0.2, 0.2, 0.2, 0.2, 0.2]
 Global_rate = 0.1
-Recovery_rate = 0.15
-Local_rate = 0.5
+Recovery_rate = 0.15 
+Local_rate = 0.5 
 Confirmation_rate = 0.05
-Traceable_probability = 0.06
+
+# Traceable probability
+Traceable_probability = 0.3 
 
 cluster_sizes_at_isolation = []
 
-while len(cluster_sizes_at_isolation) < 1000:
+while len(cluster_sizes_at_isolation) < 100:
     c = run_simulation()[3]
     for element in c:
         cluster_sizes_at_isolation.append(element)
