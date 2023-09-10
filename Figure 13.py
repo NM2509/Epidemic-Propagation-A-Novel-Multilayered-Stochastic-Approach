@@ -1,5 +1,5 @@
 #############
-# Figure 14 #
+# Figure 13 #
 #############
 
 np.random.seed(10)
