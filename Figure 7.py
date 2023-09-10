@@ -1,5 +1,5 @@
 ############################################################################################
-# Figure 8: Varying local and global infection rates to analyse effect of transmissibility #
+# Figure 7: Varying local and global infection rates to analyse effect of transmissibility #
 ############################################################################################
 
 np.random.seed(10)
