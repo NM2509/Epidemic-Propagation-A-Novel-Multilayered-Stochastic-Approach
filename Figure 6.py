@@ -1,5 +1,5 @@
 ####################################################################################
-# Figure 7: Number of active households in 200 simulations with default parameters #
+# Figure 6: Number of active households in 200 simulations with default parameters #
 ####################################################################################
 
 np.random.seed(10)
