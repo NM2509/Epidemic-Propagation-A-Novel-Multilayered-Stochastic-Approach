@@ -18,11 +18,11 @@ File 3 - defines three functions which are needed in order to obtain all househo
 
 File 4 - if we are running simulations to get the average number of child clusters, this function gets a cluster by its id.
 
-File 5 - Choosing an event out of 'birth','recovery','detection','infection'.
+File 5 - choosing an event out of 'birth','recovery','detection','infection'.
 
-File 6 - Choosing a node that a previously chosen event will apply to. 
+File 6 - choosing a node that a previously chosen event will apply to. 
 
-File 7 - Redefining cumulative sum function using numba for speed up of computations.
+File 7 - redefining cumulative sum function using numba for increased computational speed.
 
 File 8 - is the main function which runs a simulation of spread of a disease, with nodes representing households, 
 and clusters - households wuth traceable edges between them. In order to run, this function requires all functions defined in files 0-7. 
