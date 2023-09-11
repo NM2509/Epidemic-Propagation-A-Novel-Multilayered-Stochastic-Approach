@@ -9,9 +9,14 @@
 # * cluster_sizes_at_isolation - a list of cluster sizes at isolation                                #
 # * nodes_to_isolate_batches - list of lists of nodes that are being isolated after detection occurs #
 # * times_of_isolation - times at which clusters are isolated                                        #
-# * clusters - list of clusters                                                                      #
+# * clusters - list of clusters (only retuns results if BRN_simulations parameter is set to True)    #
 ######################################################################################################
 
+# Notes on inputs:
+
+# * BRN_simulations - default is 'False'. Set it to 'True' if working with clusters (i.e. when we want 'clusters' output)
+# * stopping_time - set to a default of one year, i.e. 365. Can be changed to any other value
+# * max_population_BRN_simulation - stopping simulation when number of individual reaches this limit - set to a default of 100,000
 
 #######################
 # Importing Libraries #
