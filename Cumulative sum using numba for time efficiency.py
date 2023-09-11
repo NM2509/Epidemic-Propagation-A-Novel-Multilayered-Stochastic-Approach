@@ -1,6 +1,6 @@
-##################################################################
-# Re-writing cumulative function using numba for time efficiency #
-##################################################################
+######################################################################
+# Re-writing cumulative sum function using numba for time efficiency #
+######################################################################
 
 @jit(nopython=True, fastmath=True)
 def cumsum_numba(a):
