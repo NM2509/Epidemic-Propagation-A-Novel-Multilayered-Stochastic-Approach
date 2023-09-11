@@ -1,4 +1,4 @@
-# Note that for this function, all previous functions in files 1-9 are needed.
+# Note that for this function, all previous functions in files 0-8 are needed.
 
 ######################################## 
 # R0 estimation                        #
