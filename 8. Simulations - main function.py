@@ -1,5 +1,5 @@
 ######################################################################################################
-# Note that for this function, all previous functions in files 1-8 are needed.                       #
+# Note that for this function, all previous functions in files 0-7 are needed.                       #
 # This function outputs results of a simulation, given specified parameters in                       #
 # '1. Defining parameters'. The output includes:                                                     #
 #                                                                                                    #
