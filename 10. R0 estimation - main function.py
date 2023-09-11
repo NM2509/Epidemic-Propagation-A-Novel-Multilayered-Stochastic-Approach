@@ -1,5 +1,10 @@
 ######################################## 
-# SECOND MAIN FUNCTION - R0 estimation #
+# R0 estimation                        #
+#                                      #
+# This function is used in section     #
+# 6. Basic Reproduction Number (R0).   #
+# The function outputs 100 estimated   #
+# BRN numbers given default parameters #
 ########################################
 
 def R_0_estimation(Global_rate, 
