@@ -12,7 +12,7 @@ File 0 - defines functions needed for the use of model parameters. It additional
 File 1 - defines a class called 'Household'. Each household has a range of attributes, such as the number of susceptible, infected, and recovered
 individuals. It additionally has methods to give birth, infect, recover, isolate, and update attributes. 
 
-File 2 - defines a class called 'Cluster', which corresponds to clusters of households. We only use this class when running simulations for the average number of child clusters, as it substantially increases run time of simulations. 
+File 2 - defines a class called 'Cluster', which corresponds to clusters of households. We only use this class when running simulations to determine the average number of child clusters, as it substantially increases run time of simulations. 
 
 File 3 - defines three functions which are needed in order to obtain all households to isolate in case of a detection. This would correspond to a cluster. 
 
