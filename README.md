@@ -16,7 +16,7 @@ File 2 - defines a class called 'Cluster', which corresponds to clusters of hous
 
 File 3 - defines three functions which are needed in order to obtain all households to isolate in case of a detection. This would correspond to a cluster. 
 
-File 4 - if we are running simulations for the average number of child clusters, this function gets a cluster by its id.
+File 4 - if we are running simulations to get the average number of child clusters, this function gets a cluster by its id.
 
 File 5 - Choosing an event out of 'birth','recovery','detection','infection'.
 
