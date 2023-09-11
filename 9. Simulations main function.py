@@ -1,3 +1,18 @@
+######################################################################################################
+# Note that for this function, all previous functions in files 1-8 are needed.                       #
+# This function outputs results of a simulation, given specified parameters in                       #
+# '1. Defining parameters'. The output includes:                                                     #
+#                                                                                                    #
+# * nodes - a list of nodes at the end of the simulation, both active and inactive                   #
+# * active_nodes - a list of active nodes at the end of the simulation                               #
+# * timeline - times of each event, corresponding affected node and corresponding rates              #
+# * cluster_sizes_at_isolation - a list of cluster sizes at isolation                                #
+# * nodes_to_isolate_batches - list of lists of nodes that are being isolated after detection occurs #
+# * times_of_isolation - times at which clusters are isolated                                        #
+# * clusters - list of clusters                                                                      #
+######################################################################################################
+
+
 #######################
 # Importing Libraries #
 #######################
@@ -20,9 +35,9 @@ from scipy.stats import kstest
 from scipy.optimize import minimize
 warnings.filterwarnings("ignore")
 
-#####################################
-# FIRST MAIN FUNCTION - simulations #
-#####################################
+##############
+# Simulation #
+##############
 
 def run_simulation(BRN_simulations = False, stopping_time = 365, 
                    max_population_BRN_simulation = 100000):
