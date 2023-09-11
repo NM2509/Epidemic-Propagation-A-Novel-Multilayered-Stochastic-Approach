@@ -13,13 +13,20 @@ File '9. R0 estimation - main function' is the main function used for section '6
 Libraries file lists all libraries required to run the code.
 
 File 0 - defines functions needed for the use of model parameters. It additionally sets those parameters to default values.
+
 File 1 - defines a class called 'Household'. Each household has a range of attributes, such as the number of susceptible, infected, and recovered
 individuals. It additionally has methods to give birth, infect, recover, isolate, and update attributes. 
+
 File 2 - defines a class called 'Cluster', which corresponds to clusters of households. We only use this class when running simulations for the average number of child clusters, as it substantially increases run time of simulations. 
+
 File 3 - defines three functions which are needed in order to obtain all households to isolate in case of a detection. This would correspond to a cluster. 
+
 File 4 - if we are running simulations for the average number of child clusters, this function gets a cluster by its id.
+
 File 5 - Choosing an event out of 'birth','recovery','detection','infection'.
+
 File 6 - Choosing a node that a previously chosen event will apply to. 
+
 File 7 - Redefining cumulative sum function using numba for speed up of computations.
 
 KS Statistic - the code used to calculate the p-value of Kolmogorov-Smirnov test when checking whether the size of clusters prior to their isolation follow a geometric distribution. 
