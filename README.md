@@ -26,7 +26,7 @@ File 7 - redefining cumulative sum function using numba for increased computatio
 
 File 8 - is the main function which runs a simulation of a spread of a disease. In order to run, this function requires all functions defined in files 0-7. 
 
-File 9 - is the main function used for section '6 Basic Reproduction Number (R0)' of the dissertation, and below. This function provides an unbiased estimate of the Basic Reproduction Number, given default parameter inputs. This function requires other functions defined in file 0 in order to run. 
+File 9 - is the main function used for section '6 Basic Reproduction Number (R0)' of the dissertation, and below. This function provides an unbiased estimate of the Basic Reproduction Number, given parameter inputs. This function requires other functions defined in file 0 in order to run. 
 
 KS Statistic - the code used to calculate the p-value of Kolmogorov-Smirnov test when checking whether the size of clusters prior to their isolation follow a geometric distribution. 
 
