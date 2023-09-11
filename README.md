@@ -8,3 +8,5 @@ File '8. Simulations - main function' is the main function which runs a simulati
 and clusters - households wuth traceable edges between them. In order to run, this function requires all functions defined in files 0-7. 
 
 File '9. R0 estimation - main function' is the main function used for section '6 Basic Reproduction Number (R0)' of the dissertation, and below. This function provides an unbiased estimate of the Basic Reproduction Number, given default parameter inputs. This function requires other functions defined in file 0 in order to run. 
+
+File 0
