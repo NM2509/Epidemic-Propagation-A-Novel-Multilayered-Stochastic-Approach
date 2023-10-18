@@ -35,7 +35,7 @@ To run the code from this repository, please ensure you have the following Pytho
 
 
 
-## Files Description: 
+## File Descriptions: 
 
 | Filename       | Description     |
 |----------------|---------------------------------------------------------------------------------------------------|
