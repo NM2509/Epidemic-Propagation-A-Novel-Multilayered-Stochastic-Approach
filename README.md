@@ -44,7 +44,7 @@ To run the code from this repository, please ensure you have the following Pytho
 | File 2         | Defining `Cluster` class. We only use this class when running simulations to determine the average number of child clusters, as it substantially increases run time of simulations.                                |
 | File 3         | Functions to identify households for isolation (isolation of a cluster)                                 |
 | File 4         | Function to get a cluster by its ID. Only used if we are running simulations to get the average number of child clusters                                  |
-| File 5         | Choosing an event out of 'birth','recovery','detection','infection'                                  |
+| File 5         | Choosing an event out of 'birth', 'recovery, 'detection', 'infection'                                  |
 | File 6         | Choosing a node that a previously chosen event will apply to                                   |
 | File 7         | Faster cumulative sum function using numba                                   |
 | File 8         | Main simulation function. Requires files 0-7                                   |
