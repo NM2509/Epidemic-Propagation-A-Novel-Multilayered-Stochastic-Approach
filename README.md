@@ -6,7 +6,7 @@ This repository contains the codebase for my MSc Dissertation in Statistical Sci
 
 ### Supervisors: 
 Prof. Julien Berestycki \
-Dr. Félix Foutel-Rodier
+Dr. Félix Foutel-Rodier 
 
 ### Dependencies: 
 To run the code from this repository, please ensure you have the following Python libraries installed:
