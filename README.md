@@ -1,36 +1,58 @@
-# MSc-Dissertation-Anastasia-Malakhova
-Dissertation for MSc in Statistical Science at the University of Oxford. Supervised by Prof. Julien Berestycki and Dr. Félix Foutel-Rodier. Title: Incorporating Household Structure into Branching Processes for Epidemic Propagation: A Novel Multilayered Stochastic Approach with SIR Transmission and Cluster Isolation.
+# MSc Dissertation - Anastasia Malakhova
 
-This work presents a new epidemiological model that is based on a branching process with an addition of household structure to better capture non-random patterns of contact between individuals. The code provided in this repository has been used for simulations and analysis of such model. 
+## Incorporating Household Structure into Branching Processes for Epidemic Propagation: A Novel Multilayered Stochastic Approach with SIR Transmission and Cluster Isolation
 
-** Description of files: **
+This repository contains the codebase for my MSc Dissertation in Statistical Science at the University of Oxford. The research presents a new epidemiological model that is based on a branching process with an addition of household structure to better capture non-random patterns of contact between individuals. The code provided in this repository has been used for simulations and analysis of such model. 
 
-Libraries file - lists all libraries required to run the code.
+__Supervisors__: \
+Prof. Julien Berestycki \
+Dr. Félix Foutel-Rodier
 
-File 0 - defines functions needed for the use of model parameters. It additionally sets those parameters to default values.
+__Dependencies__: \
+To run the code from this repository, please ensure you have the following Python libraries installed:
 
-File 1 - defines a class called 'Household'. Each household has a range of attributes, such as the number of susceptible, infected, and recovered
-individuals. It additionally has methods to give birth, infect, recover, isolate, and update attributes. 
+Core Libraries:
+* numpy
+* pandas
 
-File 2 - defines a class called 'Cluster', which corresponds to clusters of households. We only use this class when running simulations to determine the average number of child clusters, as it substantially increases run time of simulations. 
+Visualization Libraries:
+* matplotlib
+* seaborn
 
-File 3 - defines three functions which are needed in order to obtain all households to isolate in case of a detection. This would correspond to a cluster. 
+Optimization and Statistics:
+* scipy
+* sympy
 
-File 4 - if we are running simulations to get the average number of child clusters, this function gets a cluster by its id.
+Performance and Profiling:
+* cProfile
+* pstats
+* numba
 
-File 5 - choosing an event out of 'birth','recovery','detection','infection'.
+Utilities:
+* random
+* warnings
+* time
 
-File 6 - choosing a node that a previously chosen event will apply to. 
 
-File 7 - redefining cumulative sum function using numba for increased computational speed.
 
-File 8 - is the main function which runs a simulation of a spread of a disease. In order to run, this function requires all functions defined in files 0-7. 
+## Description of files: 
 
-File 9 - is the main function used for section '6 Basic Reproduction Number (R0)' of the dissertation, and below. This function provides an unbiased estimate of the Basic Reproduction Number, given parameter inputs. This function requires other functions defined in file 0 in order to run. 
+| Filename       | Description     |
+|----------------|---------------------------------------------------------------------------------------------------|
+| File 0         | Defines functions for model inputs and their default values                                       |
+| File 1         | Defining `Household` class                                                                        |
+| File 2         | Defining `Cluster` class. We only use this class when running simulations to determine the average number of child clusters, as it substantially increases run time of simulations.                                |
+| File 3         | Functions to identify households for isolation (isolation of a cluster)                                 |
+| File 4         | Function to get a cluster by its ID. Only used if we are running simulations to get the average number of child clusters                                  |
+| File 5         | Choosing an event out of 'birth','recovery','detection','infection'                                  |
+| File 6         | Choosing a node that a previously chosen event will apply to                                   |
+| File 7         | Faster cumulative sum function using numba                                   |
+| File 8         | Main simulation function. Requires files 0-7                                   |
+| File 9         | Main function for section 6 of the dissertation. This function provides an unbiased estimate of the Basic Reproduction Number, given parameter inputs. Requires file 0                                  |
+| KS Statistic         | Code for the Kolmogorov-Smirnov test for section 7 of the dissertation                                  |
+|  Other files      |           Correspond to Figures and Tables in the dissertation                             |
 
-KS Statistic - the code used to calculate p-value of Kolmogorov-Smirnov test when checking whether the size of clusters prior to their isolation follow geometric distribution. 
 
-The other files are as per the corresponding Figures and Tables in the Dissertation.
 
 
 
