@@ -4,38 +4,38 @@
 
 This repository contains the codebase for my MSc Dissertation in Statistical Science at the University of Oxford. The research presents a new epidemiological model that is based on a branching process with an addition of household structure to better capture non-random patterns of contact between individuals. The code provided in this repository has been used for simulations and analysis of such model. 
 
-__Supervisors__: \
+### Supervisors: \
 Prof. Julien Berestycki \
 Dr. Félix Foutel-Rodier
 
-__Dependencies__: \
+### Dependencies: \
 To run the code from this repository, please ensure you have the following Python libraries installed:
 
-Core Libraries:
+#### Core Libraries:
 * numpy
 * pandas
 
-Visualization Libraries:
+#### Visualization Libraries:
 * matplotlib
 * seaborn
 
-Optimization and Statistics:
+#### Optimization and Statistics:
 * scipy
 * sympy
 
-Performance and Profiling:
+#### Performance and Profiling:
 * cProfile
 * pstats
 * numba
 
-Utilities:
+#### Utilities:
 * random
 * warnings
 * time
 
 
 
-## Description of files: 
+## File Description: 
 
 | Filename       | Description     |
 |----------------|---------------------------------------------------------------------------------------------------|
