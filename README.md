@@ -33,6 +33,8 @@ To run the code from this repository, please ensure you have the following Pytho
 * warnings
 * time
 
+**Note**: In the code, libraries are often imported with common abbreviations, e.g. `import numpy as np`.
+
 
 
 ## File Descriptions: 
@@ -51,6 +53,24 @@ To run the code from this repository, please ensure you have the following Pytho
 | File 9         | Main function for section 6 of the dissertation. This function provides an unbiased estimate of the Basic Reproduction Number, given parameter inputs. Requires file 0                                  |
 | KS Statistic         | Code for the Kolmogorov-Smirnov test for section 7 of the dissertation                                  |
 |  Other files      |           Correspond to Figures and Tables in the dissertation                             |
+
+
+## How to Run
+
+1. **Setup**: 
+    - Clone the repository to your local machine
+    - Ensure you've installed all required dependencies (see the "Dependencies" section)
+    - Note: Some libraries are imported with specific abbreviations in the code, like `import numpy as np`
+
+2. **Executing the Code**: 
+    - Navigate to the project directory.
+    - Run Files 0 - 7 which correspond to functions and inputs used in the main function
+    - Run File 8 for the main simulation
+    - Run File 9 for the R0 simulation
+    - Run KS Statistic file to obtain results for section 7 of the dissertation
+
+
+
 
 
 
