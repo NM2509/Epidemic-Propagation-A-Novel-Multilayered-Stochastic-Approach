@@ -11,7 +11,7 @@
 # * times_of_isolation - times at which clusters are isolated                                        #
 # * clusters - list of clusters (only retuns results if BRN_simulations parameter is set to True)    #
 ######################################################################################################
-
+ 
 # Notes on inputs:
 
 # * BRN_simulations - default is 'False'. Set it to 'True' if working with clusters (i.e. when we want 'clusters' output)
