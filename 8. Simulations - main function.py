@@ -1,7 +1,7 @@
 ######################################################################################################
 # Note that for this function, all previous functions in files 0-7 are needed.                       #
 # This function outputs results of a simulation, given specified parameters in                       #
-# '1. Defining parameters'. The output includes:                                                     #
+# '0. Defining parameters'. The output includes:                                                     #
 #                                                                                                    #
 # * nodes - a list of nodes at the end of the simulation, both active and inactive                   #
 # * active_nodes - a list of active nodes at the end of the simulation                               #
@@ -52,8 +52,7 @@ def run_simulation(BRN_simulations = False, stopping_time = 365,
     nodes = [] # tracking all nodes, whether active or inactive
     active_nodes = [] # tracking active nodes 
     timeline = [] # tracks history of a disease spread
-    household_sizes_array = \
-                    create_size_biased_distribution_100000_values(sizes,probs)
+    household_sizes_array = create_size_biased_distribution_100000_values(sizes,probs)
     cluster_sizes_at_isolation = [] 
     nodes_to_isolate_batches = []
     times_of_isolation = []
@@ -174,14 +173,10 @@ def run_simulation(BRN_simulations = False, stopping_time = 365,
                 chosen_node.active = False
 
                 # remove from list of rates
-                recovery_rates_per_node = np.delete(recovery_rates_per_node, 
-                                                    index)
-                infection_rates_per_node = np.delete(infection_rates_per_node, 
-                                                     index)
+                recovery_rates_per_node = np.delete(recovery_rates_per_node, index)
+                infection_rates_per_node = np.delete(infection_rates_per_node, index)
                 birth_rates_per_node = np.delete(birth_rates_per_node, index)
-                confirmation_rates_per_node = \
-                                        np.delete(confirmation_rates_per_node, 
-                                                  index)
+                confirmation_rates_per_node = np.delete(confirmation_rates_per_node, index)
 
                 # remove from active nodes
                 active_nodes.remove(chosen_node)
@@ -189,14 +184,10 @@ def run_simulation(BRN_simulations = False, stopping_time = 365,
 
             elif chosen_node.infected != 0:
                 # update lists of rates per node 
-                recovery_rates_per_node[index] = \
-                                chosen_node.recovery_rate
-                infection_rates_per_node[index] = \
-                                chosen_node.infection_rate
-                birth_rates_per_node[index] = \
-                                chosen_node.birth_rate
-                confirmation_rates_per_node[index] = \
-                                chosen_node.confirmation_rate
+                recovery_rates_per_node[index] = chosen_node.recovery_rate
+                infection_rates_per_node[index] = chosen_node.infection_rate
+                birth_rates_per_node[index] = chosen_node.birth_rate
+                confirmation_rates_per_node[index] = chosen_node.confirmation_rate
             
             # Updating timeline
             timeline_values = [chosen_node.household_id, 
@@ -337,8 +328,7 @@ def run_simulation(BRN_simulations = False, stopping_time = 365,
                     
         elif chosen_event == 'confirmation':
             # Choose node
-            probabilities = confirmation_rates_per_node / \
-                            total_confirmation_rate
+            probabilities = confirmation_rates_per_node / total_confirmation_rate
             index = choose_index_of_node(probabilities, 
                                          random_numbers, 
                                          iteration_index)
@@ -360,18 +350,10 @@ def run_simulation(BRN_simulations = False, stopping_time = 365,
                 if node == chosen_node:
                     index = active_nodes.index(node)
                     node.isolation(current_time, True)
-                    recovery_rates_per_node = \
-                                np.delete(recovery_rates_per_node, 
-                                          index)
-                    infection_rates_per_node = \
-                                np.delete(infection_rates_per_node, 
-                                index)
-                    birth_rates_per_node = \
-                                np.delete(birth_rates_per_node, 
-                                index)
-                    confirmation_rates_per_node = \
-                                np.delete(confirmation_rates_per_node, 
-                                index)
+                    recovery_rates_per_node = np.delete(recovery_rates_per_node, index)
+                    infection_rates_per_node = np.delete(infection_rates_per_node, index)
+                    birth_rates_per_node = np.delete(birth_rates_per_node, index)
+                    confirmation_rates_per_node = np.delete(confirmation_rates_per_node, index)
                     
                     # remove from rates, as not in the active_nodes list
                     total_rate = total_rate - node.total_rate
@@ -402,18 +384,10 @@ def run_simulation(BRN_simulations = False, stopping_time = 365,
                     index = active_nodes.index(node)
                     node.isolation(current_time, False)
                     # update lists of rates per node 
-                    recovery_rates_per_node = \
-                                np.delete(recovery_rates_per_node, 
-                                index)
-                    infection_rates_per_node = \
-                                np.delete(infection_rates_per_node, 
-                                index)
-                    birth_rates_per_node = \
-                                np.delete(birth_rates_per_node, 
-                                index)
-                    confirmation_rates_per_node = \
-                                np.delete(confirmation_rates_per_node, 
-                                index)
+                    recovery_rates_per_node = np.delete(recovery_rates_per_node, index)
+                    infection_rates_per_node = np.delete(infection_rates_per_node, index)
+                    birth_rates_per_node = np.delete(birth_rates_per_node, index)
+                    confirmation_rates_per_node = np.delete(confirmation_rates_per_node, index)
                     
                     # remove from rates, as not in the active_nodes list
                     total_rate = total_rate - node.total_rate
