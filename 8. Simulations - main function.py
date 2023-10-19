@@ -262,8 +262,7 @@ def run_simulation(BRN_simulations = False, stopping_time = 365,
             # For assigning correct child ids 
             child_number = len(chosen_node.children) + 1
             # apply method
-            new_node = \
-            chosen_node.generate_node(child_number, 
+            new_node = chosen_node.generate_node(child_number, 
                                       current_time, 
                                       household_sizes_array[household_number])
             
@@ -272,8 +271,7 @@ def run_simulation(BRN_simulations = False, stopping_time = 365,
                 # if untraceable - new cluster
                 if new_node.traceable == False:
                     parent_cluster = chosen_node.cluster
-                    new_cluster = \
-                        parent_cluster.create_new_cluster(new_node, 
+                    new_cluster = parent_cluster.create_new_cluster(new_node, 
                                                           current_time, 
                                                           parent_cluster)
                     clusters.append(new_cluster)
@@ -301,17 +299,13 @@ def run_simulation(BRN_simulations = False, stopping_time = 365,
             active_nodes_cardinality += 1
             
             # update lists of rates per node
-            recovery_rates_per_node = \
-                        np.append(recovery_rates_per_node, 
+            recovery_rates_per_node = np.append(recovery_rates_per_node, 
                                   new_node.recovery_rate)
-            infection_rates_per_node = \
-                        np.append(infection_rates_per_node, 
+            infection_rates_per_node = np.append(infection_rates_per_node, 
                                   new_node.infection_rate)
-            birth_rates_per_node = \
-                        np.append(birth_rates_per_node, 
+            birth_rates_per_node = np.append(birth_rates_per_node, 
                         new_node.birth_rate)
-            confirmation_rates_per_node = \
-                        np.append(confirmation_rates_per_node, 
+            confirmation_rates_per_node = np.append(confirmation_rates_per_node, 
                         new_node.confirmation_rate)
             
             # Updating timeline
