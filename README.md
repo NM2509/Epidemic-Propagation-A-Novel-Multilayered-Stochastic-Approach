@@ -41,8 +41,8 @@ To run the code from this repository, please ensure you have the following Pytho
 
 | Filename       | Description     |
 |----------------|---------------------------------------------------------------------------------------------------|
-| File 0         | Defines functions for model inputs and their default values                                       |
-| File 1         | Defining `Household` class                                                                        |
+| defining_parameters.py         | Defines functions for model inputs and their default values                                       |
+| nodes_class.py         | Defining `Household` class                                                                        |
 | File 2         | Defining `Cluster` class. We only use this class when running simulations to determine the average number of child clusters, as it substantially increases run time of simulations.                                |
 | File 3         | Functions to identify households for isolation (isolation of a cluster)                                 |
 | File 4         | Function to get a cluster by its ID. Only used if we are running simulations to get the average number of child clusters                                  |
