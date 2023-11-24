@@ -9,6 +9,8 @@
 # BRN numbers given default parameters #
 ########################################
 
+from defining_parameters import *
+
 def R_0_estimation(Global_rate, 
                    Recovery_rate, 
                    Local_rate, 
