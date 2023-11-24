@@ -43,15 +43,15 @@ To run the code from this repository, please ensure you have the following Pytho
 |----------------|---------------------------------------------------------------------------------------------------|
 | defining_parameters.py         | Defines functions for model inputs and their default values                                       |
 | nodes_class.py         | Defining `Household` class                                                                        |
-| File 2         | Defining `Cluster` class. We only use this class when running simulations to determine the average number of child clusters, as it substantially increases run time of simulations.                                |
-| File 3         | Functions to identify households for isolation (isolation of a cluster)                                 |
-| File 4         | Function to get a cluster by its ID. Only used if we are running simulations to get the average number of child clusters                                  |
-| File 5         | Choosing an event out of 'birth', 'recovery, 'detection', 'infection'                                  |
-| File 6         | Choosing a node that a previously chosen event will apply to                                   |
-| File 7         | Faster cumulative sum function using numba                                   |
-| File 8         | Main simulation function. Requires files 0-7                                   |
-| File 9         | Main function for section 6 of the dissertation. This function provides an unbiased estimate of the Basic Reproduction Number, given parameter inputs. Requires file 0                                  |
-| KS Statistic         | Code for the Kolmogorov-Smirnov test for section 7 of the dissertation                                  |
+| clusters_class.py         | Defining `Cluster` class. We only use this class when running simulations to determine the average number of child clusters, as it substantially increases run time of simulations.                                |
+| get_connected_cluster.py         | Functions to identify households for isolation (isolation of a cluster)                                 |
+| get_cluster_by_id.py         | Function to get a cluster by its ID. Only used if we are running simulations to get the average number of child clusters                                  |
+| choose_event.py         | Choosing an event out of 'birth', 'recovery, 'detection', 'infection'                                  |
+| choose_node.py         | Choosing a node that a previously chosen event will apply to                                   |
+| cumulative_sum.py         | Faster cumulative sum function using numba                                   |
+| main.py         | Main simulation function. Requires files 0-7                                   |
+| r_zero_estimation.py         | Main function for section 6 of the dissertation. This function provides an unbiased estimate of the Basic Reproduction Number, given parameter inputs. Requires file 0                                  |
+| ks_statistic.py         | Code for the Kolmogorov-Smirnov test for section 7 of the dissertation                                  |
 |  Other files      |           Correspond to Figures and Tables in the dissertation                             |
 
 
