@@ -9,33 +9,7 @@ Prof. Julien Berestycki \
 Dr. Félix Foutel-Rodier 
 
 ### Dependencies: 
-To run the code from this repository, please ensure you have the following Python libraries installed:
-
-#### Core Libraries
-* numpy
-* pandas
-
-#### Visualization Libraries
-* matplotlib
-* seaborn
-
-#### Optimization and Statistics
-* scipy
-* sympy
-
-#### Performance and Profiling
-* cProfile
-* pstats
-* numba
-
-#### Utilities
-* random
-* warnings
-* time
-
-**Note**: In the code, libraries are often imported with common abbreviations, e.g. `import numpy as np`.
-
-
+All requirements are in the requirements.txt file
 
 ## File Descriptions: 
 
@@ -60,14 +34,12 @@ To run the code from this repository, please ensure you have the following Pytho
 1. **Setup**: 
     - Clone the repository to your local machine
     - Ensure you've installed all required dependencies (see the "Dependencies" section)
-    - Note: Some libraries are imported with specific abbreviations in the code, like `import numpy as np`
 
 2. **Executing the Code**: 
     - Navigate to the project directory.
-    - Run Files 0 - 7 which correspond to functions and inputs used in the main function
-    - Run File 8 for the main simulation
-    - Run File 9 for the R0 simulation
-    - Run KS Statistic file to obtain results for section 7 of the dissertation
+    - Run main.py file to generate a simulation
+    - Run r_zero_estimation.py file to generate an R0 estimation
+    - Run ks_statistic file to obtain results for section 7 of the dissertation
 
 
 
