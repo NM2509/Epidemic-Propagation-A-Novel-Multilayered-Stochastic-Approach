@@ -23,7 +23,7 @@ All requirements are in the requirements.txt file
 | choose_event.py         | Choosing an event out of 'birth', 'recovery, 'detection', 'infection'                                  |
 | choose_node.py         | Choosing a node that a previously chosen event will apply to                                   |
 | cumulative_sum.py         | Faster cumulative sum function using numba                                   |
-| main.py         | Main simulation function. Requires files 0-7                                   |
+| main.py         | Main simulation function. Requires all the files listed above                                   |
 | r_zero_estimation.py         | Main function for section 6 of the dissertation. This function provides an unbiased estimate of the Basic Reproduction Number, given parameter inputs. Requires file 0                                  |
 | ks_statistic.py         | Code for the Kolmogorov-Smirnov test for section 7 of the dissertation                                  |
 |  Other files      |           Correspond to Figures and Tables in the dissertation                             |
